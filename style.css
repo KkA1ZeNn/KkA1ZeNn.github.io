@@ -1,0 +1,131 @@
+body {
+   margin: 0;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.gameZone {
+   width: 95%;
+   max-width: 700px;
+   background-color: rgb(220, 191, 112);
+   border: 15px solid rgb(153, 91, 16);
+   border-radius: 30px;
+   position: relative;
+   box-sizing: border-box;
+}
+
+.gameElement {
+   position: absolute;
+   width: 25%;
+   height: 25%;
+   background-color: #fff;
+   border: 5px solid black;
+   border-radius: 20px;
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 60px;
+   top: 0px;
+}
+
+.booferBlock {
+   position: absolute;
+   width: 25%;
+   height: 25%;
+}
+
+.bottomBar {
+   width: 95%;
+   max-width: 700px;
+   height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.startTheGame {
+   width: 45%;
+   height: 100%;
+   border-radius: 30px;
+   background-color: rgb(86, 178, 29);  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 50px;
+   border: 10px solid green;
+}
+
+.disabledStart {
+   display: none;
+   width: 45%;
+   height: 100%;
+   border-radius: 30px;
+   background-color: gray;  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 50px;
+   border: 10px solid rgb(71, 71, 71);
+}
+
+.counter {
+   width: 13%;
+   height: 100%;
+   color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 40px;
+}
+
+.restart {
+   width: 70px;
+   height: 100%;
+   background-image: url("images/reboot.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.startTheGame:hover {
+   border: 10px solid black;
+}
+
+@media (max-width: 400px) {
+   .gameElement {
+      border: 2px solid black;
+      border-radius: 10px;
+      font-size: 50px;
+   }
+
+   .gameZone {
+      margin-top: auto;
+   }
+
+   .bottomBar {
+      height: 60px;
+      margin-top: 15%;
+      margin-bottom: 25%;
+   }
+
+   .startTheGame {
+      border-radius: 20px;  
+      font-size: 40px;
+      border: 5px solid green;
+   }
+
+   .counter {
+      font-size: 30px;
+   }
+
+   .restart {
+      width: 60px;
+   }
+}
