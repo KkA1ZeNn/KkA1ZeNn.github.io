@@ -15,7 +15,6 @@ let availableMoves = [];
 let flagOfAvailable = false;
 let counterValue = 0;
 
-
 class positionNumber {
    constructor(value1, value2) {
       this.posX = value1;
